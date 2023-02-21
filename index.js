@@ -6,7 +6,7 @@ function getTitle(string){
     let isCopied = document.querySelector('p')
     generate.addEventListener('click', () => {
       let val = text.value.split('/').slice(-1)[0];
-      val = val.replace(/[-]/g, ' ').split(' ').map((word) => word.charAt(0).toUpperCase() + word.substring(1)).join(' ');
+      val = val.replace(/[^0-9a-z]/gi, ' ').split(' ').map((word) => word.charAt(0).toUpperCase() + word.substring(1)).join(' ');
       display.textContent = text.value.match(/[/]/g).length > 4 ? '_' + val : val;
       isCopied.textContent = ''
     })
