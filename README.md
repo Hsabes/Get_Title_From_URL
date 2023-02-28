@@ -7,6 +7,8 @@ To use this repo, fork and clone it on to your local machine. Navigate to the lo
 ## Instructions
 Copy and paste any url (include "https://") into the text field to generate the neat title, and copy it to your clipboard by clicking the copy button. 3rd level URLs are prepended with an underscore.
 
+Note: Make sure the URL does not end with "/"
+
 ## Demo
 Input -> https://en.wikipedia.org/wiki/Harrison_Ford
 Output -> Harrison Ford
